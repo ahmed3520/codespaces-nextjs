@@ -6,8 +6,28 @@
     "start": "next start"
   },
   "dependencies": {
+    "@react-spring/web": "^9.7.2",
+    "@uiw/react-markdown-preview": "^4.1.13",
+    "@uiw/react-md-editor": "^3.23.0",
     "next": "latest",
+    "next-remove-imports": "^1.0.11",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "react-icons": "^4.9.0",
+    "react-markdown": "^8.0.7",
+    "react-spring": "^9.7.1",
+    "react-syntax-highlighter": "^15.5.0",
+    "rehype-highlight": "^6.0.0",
+    "rehype-katex": "^6.0.3",
+    "remark-gfm": "^3.0.1",
+    "remark-highlight.js": "^7.0.1",
+    "remark-html": "^15.0.2",
+    "remark-math": "^5.1.1",
+    "remark-parse": "^10.0.2"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.24",
+    "tailwindcss": "^3.3.2"
   }
 }

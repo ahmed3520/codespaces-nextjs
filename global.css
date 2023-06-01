@@ -1,14 +1,123 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.markdown > * {
+  all: revert;
+}
+
 body {
-  font-family: 'SF Pro Text', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica',
-    'Arial', sans-serif;
-  margin: 0 auto;
-  font-size: 16px;
-  line-height: 1.65;
-  word-break: break-word;
-  font-kerning: auto;
-  font-variant: normal;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-rendering: optimizeLegibility;
-  hyphens: auto;
+  background-color: rgb(17, 17, 17);
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
+}
+#__next {
+  width: 100%;
+  height: 100%;
+}
+.wmde-markdown {
+  background-color: rgb(17, 17, 17) !important ;
+}
+.main-app-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+.sidebar-comp {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.drop-down-svg {
+  transform-origin: center;
+  transform: rotate(90deg);
+}
+.nav-comp-main {
+  width: 15%;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 85px;
+  border-right: 1px solid #444950;
+  background-color: rgb(17, 17, 17) !important;
+  z-index: 1000;
+}
+.ul-main-nav {
+  width: 85%;
+}
+
+.navbar-main {
+  background-color: #111111;
+  color: #ffffff;
+  border-bottom: 1px solid #444950;
+  z-index: 1000;
+}
+
+.navbar-main .logo {
+}
+.logo-img {
+  width: 100%;
+  height: 50px;
+  margin-left: 45px !important;
+}
+.document-wr {
+  width: 85%;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.dark {
+  width: 70%;
+}
+.titles {
+  width: 30%;
+  top: auto !important;
+  right: 50px;
+  padding-top: 150;
+}
+.dark > div:first-child {
+  padding-top: 150px !important;
+}
+
+@media (max-width: 1150px) {
+  .md\:translate-x-0 {
+    --tw-translate-x: -100% !important;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+      rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+      scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y)) !important;
+  }
+  .show-at-1150px {
+    display: block !important;
+  }
+  .nav-comp-main {
+    width: 40%;
+  }
+  .document-wr,
+  .dark {
+    width: 100%;
+  }
+  .logo-img {
+    margin-left: 0px !important;
+  }
+}
+.ul-main-nav {
+  margin-right: 10px;
+}
+.sidebar-show {
+  --tw-translate-x: 0px !important;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+    rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y)) !important;
+}
+@media (max-width: 500px) {
+  .nav-comp-main {
+    width: 60%;
+  }
+}
+@media (max-width: 300px) {
+  .nav-comp-main {
+    width: 80%;
+  }
 }
